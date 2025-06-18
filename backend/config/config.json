@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "root",
+    "password": null,
+    "database": "digiwise",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
+  "test": {
+    "username": "root",
+    "password":null,
+    "database": "digiwise",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
+  "production": {
+    "username": "digiwizard",
+    "password": "@Digiw1zardry",
+    "database": "digiwise",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  }
+}
