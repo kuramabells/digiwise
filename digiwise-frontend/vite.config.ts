@@ -72,7 +72,7 @@ export default defineConfig(({ mode }) => {
     css: {
       postcss: {},
     },
-    base: isProduction ? '/' : './',
+    base: isProduction ? '/digiwise/' : './',
     publicDir: 'public',
     server: !isProduction ? {
       port: 5173,
