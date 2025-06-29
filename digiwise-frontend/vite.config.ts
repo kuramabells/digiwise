@@ -54,7 +54,14 @@ export default defineConfig(({ mode }) => {
   return {
     root: '.',
     plugins: [
-      react()
+      react({
+        // Tell React to use Emotion’s automatic JSX runtime:
+        jsxImportSource: '@emotion/react',
+        // And install the Babel plugin so the CSS runtime (nr) is injected:
+        babel: {
+          plugins: ['@emotion/babel-plugin']
+        }
+      })
       // Visualize bundle (uncomment if needed)
       // isProduction && visualizer({
       //   open: true,
@@ -103,8 +110,9 @@ export default defineConfig(({ mode }) => {
     },
     build: {
       ...commonBuildConfig,
+      sourcemap:false,
       ...(isProduction ? {
-        minify: 'terser',
+        minify: 'esbuild',
         terserOptions: {
           compress: {
             drop_console: true,

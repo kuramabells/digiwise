@@ -29,6 +29,7 @@
     "recharts": "^2.15.4"
   },
   "devDependencies": {
+    "@emotion/babel-plugin": "^11.13.5",
     "@rollup/plugin-commonjs": "^28.0.6",
     "@rollup/plugin-node-resolve": "^16.0.1",
     "@tailwindcss/nesting": "^0.0.0-insiders.565cd3e",
